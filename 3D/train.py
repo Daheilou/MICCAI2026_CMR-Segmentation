@@ -15,7 +15,7 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader
 import pandas as pd
 from torch.optim.lr_scheduler import SequentialLR, LinearLR, CosineAnnealingWarmRestarts
-from model_factory2 import build_multihead_model
+from model_factory import build_multihead_model
 
 def _load_local_module(module_filename: str, module_name: str):
     current_dir = os.path.dirname(os.path.abspath(__file__))
